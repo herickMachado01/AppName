@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import dados from  './service/dados.js'
+
+
 export default function App() {
+  console.log(dados.state, dados.cities);
   return (
     <View style={styles.container}>
-      <Text>Atualizou</Text>
+      <Text>Tropa da Marketada</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -18,3 +22,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+ 
